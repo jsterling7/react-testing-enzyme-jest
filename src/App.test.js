@@ -17,4 +17,13 @@ describe("Landing Page", () => {
         expect(welcomeElement.exists()).toEqual(true)
         expect(welcomeElement.text()).toEqual('Welcome to the Fantasy Football App!')
     })
+
+    it('lets the user know why the site exists', () => {
+        const component = shallow(<App/>)
+
+        const welcomeElement = component.find('h3');
+
+        expect(welcomeElement.exists()).toEqual(true)
+        expect(welcomeElement.text()).toEqual('The central source for all drafting, roster moves, and the latest player information.')
+    })
 })
