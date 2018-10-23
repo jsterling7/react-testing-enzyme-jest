@@ -9,9 +9,13 @@ describe('sanity testing the test suite', () => {
 })
 
 describe("Landing Page", () => {
-    it("greets the user", () => {
-        const component = shallow(<App/>)
+    let component
 
+    beforeEach(() => {
+        component = shallow(<App/>)
+    })
+
+    it("greets the user", () => {
         const welcomeElement = component.find('h1');
 
         expect(welcomeElement.exists()).toEqual(true)
@@ -19,8 +23,6 @@ describe("Landing Page", () => {
     })
 
     it('lets the user know why the site exists', () => {
-        const component = shallow(<App/>)
-
         const welcomeElement = component.find('h3');
 
         expect(welcomeElement.exists()).toEqual(true)
