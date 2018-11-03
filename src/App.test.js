@@ -1,9 +1,9 @@
 import React from "react";
-import {App} from './App'
 import {shallow} from 'enzyme'
 import {Route} from "react-router-dom";
 import LandingPage from "./LandingPage";
 import Team from "./Team";
+import App from "./App";
 
 let app, routes
 

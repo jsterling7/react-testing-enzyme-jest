@@ -4,7 +4,7 @@ import LandingPage from "./LandingPage";
 import Team from "./Team";
 
 
-export class App extends Component {
+export default class App extends Component {
 
     render(){
         return(
