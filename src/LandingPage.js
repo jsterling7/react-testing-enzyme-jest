@@ -61,7 +61,7 @@ class LandingPage extends Component {
     render() {
         return (
             <div className="LandingPage">
-                <h1>Welcome to the Fantasy Football App!</h1>
+                <h1>Welcome to the Fantasy Football LandingPage!</h1>
                 <h3>The central source for all drafting, roster moves, and the latest player information.</h3>
 
                 <div>
