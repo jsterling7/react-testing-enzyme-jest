@@ -1,5 +1,5 @@
 import React from 'react'
-import App from './App'
+import LandingPage from './LandingPage'
 import {shallow} from "enzyme";
 
 describe('sanity testing the test suite', () => {
@@ -12,14 +12,14 @@ describe("Landing Page static content", () => {
     let component
 
     beforeEach(() => {
-        component = shallow(<App/>)
+        component = shallow(<LandingPage/>)
     })
 
     it("greets the user", () => {
         const welcomeElement = component.find('h1');
 
         expect(welcomeElement.exists()).toEqual(true)
-        expect(welcomeElement.text()).toEqual('Welcome to the Fantasy Football App!')
+        expect(welcomeElement.text()).toEqual('Welcome to the Fantasy Football LandingPage!')
     })
 
     it('lets the user know why the site exists', () => {
@@ -33,7 +33,7 @@ describe("Landing Page static content", () => {
 describe("Searching for teams", () => {
     describe("when the team is found", () => {
         it("displays additional information about the teams", () => {
-            const component = shallow(<App/>)
+            const component = shallow(<LandingPage/>)
 
             const event = {
                 target: {
