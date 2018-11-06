@@ -1,12 +1,19 @@
 import React, {Component} from 'react'
 import './App.css'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import TeamSearch from "./TeamSearch";
+import Banana from "./Banana";
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-                <h1>Welcome to the Fantasy Football App!</h1>
-                <h3>The central source for all drafting, roster moves, and the latest player information.</h3>
+                <Router>
+                    <Switch>
+                        <Route path="/banana" component={Banana}/>
+                        <Route exact path="/" component={TeamSearch}/>
+                    </Switch>
+                </Router>
             </div>
         )
     }
