@@ -29,3 +29,7 @@ describe("Landing Page", () => {
         expect(welcomeElement.text()).toEqual('The central source for all drafting, roster moves, and the latest player information.')
     })
 })
+
+describe('', () => {
+
+})
