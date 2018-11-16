@@ -27,7 +27,9 @@
   "devDependencies": {
     "@types/jest": "^23.3.7",
     "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "jest-environment-enzyme": "^7.0.1",
+    "jest-enzyme": "^7.0.1",
     "prettier": "1.14.3"
   }
 }
